@@ -1,0 +1,27 @@
+{
+	"Resources": {
+		"VPC": {
+			"Type": "AWS::EC2::VPC",
+			"Properties": {
+				"CidrBlock": "10.0.0.0/16",
+				"Tags": [
+					{
+						"Key": "Name",
+						"Value": "CF VPC"
+					}
+				]
+			}
+		},
+		"InternetGateway": {
+			"Type": "AWS::EC2::InternetGateway",
+			"Properties": {
+				"Tags": [
+					{
+						"Key": "Name",
+						"Value": "CF IG"
+					}
+				]
+			}
+		}
+	}
+}
